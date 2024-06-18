@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="search" />
+<button (click)="callApi()">Search Character</button>
+@for (c of characterResult.results; track $index) {
+    <h1>{{ c.name }}</h1>
+    <p>Eye color: {{ c.eye_color }}</p>
+    <p>Hair: {{ c.hair_color }}</p>
+}
+
+
